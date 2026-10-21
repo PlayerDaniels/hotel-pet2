@@ -13,7 +13,7 @@
 
 
 
-    <div class="principal">
+  <div class="principal">
 
         <div class="menu-cima">
 
@@ -46,8 +46,6 @@
         </div>
 
 
-
-  
         <div class="conteudo">
 
             <h3>usuarios / cadastrar-usuario</h3>
@@ -58,15 +56,15 @@
 
                     <h3>Editar Perfil</h3>
 
-                    <input type="text" placeholder="Email">
+                    <input type="text" id="email" placeholder="Email">
 
-                    <input type="text" placeholder="Nome">
+                    <input type="text" id="nome" placeholder="Nome">
 
-                    <input type="text" placeholder="Sobrenome">
+                    <input type="text" id="sobrenome" placeholder="Sobrenome">
 
-                    <input type="text" placeholder="Telefone">
+                    <input type="text" id="telefone" placeholder="Telefone">
 
-                    <select>
+                    <select id="tipo">
                         <option value="cliente">Cliente</option>
                         <option value="funcionario">Funcionário</option>
                         <option value="gerente">Gerente</option>
@@ -76,15 +74,15 @@
 
                         <label>Foto do Perfil</label>
 
-                        <input type="file" accept="image/*">
+                        <input type="file" id="foto" accept="image/*">
 
                     </div>
 
                     <div class="botoes-perfil">
 
-                        <button class="limpar">Limpar</button>
+                        <button class="limpar" id="btn-limpar">Limpar</button>
 
-                        <button class="salvar">Salvar</button>
+                        <button class="salvar" id="btn-salvar">Salvar</button>
 
                     </div>
 
@@ -96,6 +94,8 @@
 
     </div>
 
+
+    <script src="js/cadastrar-usuario.js"></script>
 </body>
 
 </html>

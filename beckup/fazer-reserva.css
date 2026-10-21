@@ -1,0 +1,107 @@
+.conteudo {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+.conteudo h3 {
+    margin-bottom: 20px;
+}
+
+
+.fazer-reservas {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.fazer-reservas h3 {
+    margin-bottom: 25px;
+}
+
+
+
+.fazer-reservas input[type="text"] {
+    display: block;
+    width: 930px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+
+.datas-reserva {
+    display: flex;
+    gap: 10px;
+    width: 930px;
+    margin-bottom: 15px;
+}
+
+.datas-reserva input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+
+.fazer-reservas textarea {
+    display: block;
+    width: 930px;
+    height: 120px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.total-diaria {
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #006eff;
+    border-radius: 8px;
+}
+
+.total-diaria strong {
+    color: #006eff;
+    font-size: 18px;
+}
+
+
+
+.botoes-reserva {
+    margin-right: 860px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.botoes-reserva button {
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.botoes-reserva .limpar {
+    color: #006eff;
+    background-color: white;
+    border: 1px solid #006eff;
+}
+
+.botoes-reserva .salvar {
+    color: white;
+    background-color: #006eff;
+    border: 1px solid #006eff;
+}

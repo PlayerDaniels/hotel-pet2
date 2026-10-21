@@ -11,111 +11,77 @@
 
 <body>
 
-
-
-
-
     <div class="principal">
 
         <div class="menu-cima">
-
             <div class="usuario">
                 <img src="img/Daniel.jpg" alt="Foto do usuário">
                 <a>Daniel Correia</a>
             </div>
-
         </div>
 
         <div class="menu-lateral">
-
             <div class="logo">
                 <img src="img/logo-hotel-pet.webp" alt="Logo">
             </div>
-
             <div class="menu-opcoes">
-
                 <a href="pet.html">Pet</a>
-
                 <a href="usuarios.html">Usuários</a>
-
                 <a href="configuracoes.html">Configurações</a>
-
                 <a href="reservas.html">Reservas</a>
-
             </div>
-
         </div>
-
-
 
         <div class="conteudo">
 
             <h3>Home / Reservas</h3>
 
             <div class="conteudo-usuario">
-
                 <div class="botoes-usuario">
-
                     <a href="fazer-reserva.html"> + Nova Reserva</a>
-
                 </div>
-
             </div>
-
-
 
             <div class="dialogo">
 
-
-
                 <div class="campos-esquerda">
+                    <input type="text" id="busca-id" placeholder="ID">
 
-                    <input type="text" placeholder="ID">
+                    <input type="text" id="busca-proprietario" placeholder="Proprietário">
 
-                    <input type="email" placeholder="Proprietario">
-
-                    <select>
+                    <select id="busca-status">
                         <option value="">Status</option>
-                        <option value="ativo">Ativo</option>
-                        <option value="inativo">Inativo</option>
-                        <option value="pendente">Pendente</option>
+                        <option value="reservada">Reservada</option>
+                        <option value="em andamento">Em andamento</option>
+                        <option value="finalizada">Finalizada</option>
+                        <option value="cancelada">Cancelada</option>
                     </select>
-
                 </div>
 
                 <div class="campos-direita">
-
                     <div class="datas">
-
-                        <input type="date">
-
-                        <input type="date">
-
+                        <input type="date" id="busca-inicio">
+                        <input type="date" id="busca-fim">
                     </div>
 
-                    <input type="text" value="00,00">
+                    <div class="datas">
+                        <input type="text" id="busca-total-min" placeholder="Total mínimo (R$ 0,00)">
+                        <input type="text" id="busca-total-max" placeholder="Total máximo (R$ 0,00)">
+                    </div>
 
-                    <input type="text" value="00,00">
-
+                    <input type="text" id="busca-pet" placeholder="Pet">
                 </div>
+
                 <div class="botoes-dialogo">
-
-
-
-                    <button class="pesquisar">Pesquisar</button>
-
-                    <button class="limpar">Limpar</button>
-
+                    <button class="pesquisar" id="btn-pesquisar">Pesquisar</button>
+                    <button class="limpar" id="btn-limpar">Limpar</button>
                 </div>
 
             </div>
-
-
 
             <div class="cadastrados">
 
                 <div class="barra-cadastrados">
-
                     <div class="espaco-check"></div>
                     <div>ID</div>
                     <div>Pet</div>
@@ -123,126 +89,58 @@
                     <div>partida</div>
                     <div>Status</div>
                     <div>total</div>
-
                 </div>
 
-                <div class="usuario-cadastrado">
-
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="ID">
-                        11122233
-                    </div>
-
-                    <div class="pet">
-                        Zigg
-                    </div>
-
-                    <div class="nome">
-                        22/08/2026
-                    </div>
-
-                    <div class="funcao">
-                        25/08/2026
-                    </div>
-
-                    <div class="status-2">
-                        Ativo
-                    </div>
-
-                    <div class="criado">
-                        232,00
-                    </div>
-
+                <div class="usuario-cadastrado" data-proprietario="Daniel Correia">
+                    <div class="check"><input type="checkbox"></div>
+                    <div class="ID">11122233</div>
+                    <div class="pet">Zigg</div>
+                    <div class="nome">22/08/2026</div>
+                    <div class="funcao">25/08/2026</div>
+                    <div class="status-2">Reservada</div>
+                    <div class="criado">232,00</div>
                     <div class="acoes">
                         <a href="editar-reserva.html">Editar</a>
                         <a href="ver-reservas.html">Visualizar</a>
                     </div>
-
                 </div>
 
-                <div class="usuario-cadastrado">
-
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="ID">
-                        11122234
-                    </div>
-
-                    <div class="pet">
-                        Russo
-                    </div>
-
-                    <div class="nome">
-                        22/08/2026
-                    </div>
-
-                    <div class="funcao">
-                        25/08/2026
-                    </div>
-
-                    <div class="status-2">
-                        Em andamento
-                    </div>
-
-                    <div class="criado">
-                        232,00
-                    </div>
-
+                <div class="usuario-cadastrado" data-proprietario="José Silva">
+                    <div class="check"><input type="checkbox"></div>
+                    <div class="ID">11122234</div>
+                    <div class="pet">Russo</div>
+                    <div class="nome">22/08/2026</div>
+                    <div class="funcao">25/08/2026</div>
+                    <div class="status-2">Em andamento</div>
+                    <div class="criado">232,00</div>
                     <div class="acoes">
                         <a href="editar-reserva.html">Editar</a>
                         <a href="ver-reservas.html">Visualizar</a>
                     </div>
-
                 </div>
 
-                <div class="usuario-cadastrado">
-
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="ID">
-                        11122235
-                    </div>
-
-                    <div class="pet">
-                        Luck
-                    </div>
-
-                    <div class="nome">
-                        22/08/2026
-                    </div>
-
-                    <div class="funcao">
-                        25/08/2026
-                    </div>
-
-                    <div class="status">
-                        Finalizado
-                    </div>
-
-                    <div class="criado">
-                        232,00
-                    </div>
-
+                <div class="usuario-cadastrado" data-proprietario="João Filho de Zebedeu">
+                    <div class="check"><input type="checkbox"></div>
+                    <div class="ID">11122235</div>
+                    <div class="pet">Luck</div>
+                    <div class="nome">22/08/2026</div>
+                    <div class="funcao">25/08/2026</div>
+                    <div class="status">Finalizada</div>
+                    <div class="criado">232,00</div>
                     <div class="acoes">
                         <a href="editar-reserva-finalizada.html">Editar</a>
                         <a href="ver-reservas.html">Visualizar</a>
                     </div>
-
                 </div>
-
 
             </div>
 
-
         </div>
 
+    </div>
+
+    <script src="js/navegacao.js"></script>
+    <script src="js/reservas.js"></script>
 </body>
 
 </html>

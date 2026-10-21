@@ -1,0 +1,108 @@
+.conteudo {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+.conteudo h3 {
+    margin-bottom: 20px;
+}
+
+.config-pet {
+    width: 100%;
+}
+
+.config-pet .ver-pet {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.ver-pet h3 {
+    margin-bottom: 25px;
+}
+
+
+.botoes-pet {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.botoes-pet button {
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.editar {
+    color: white;
+    background-color: #006eff;
+    border: 1px solid #006eff;
+}
+
+.deletar {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+
+
+
+.informacoes-pet {
+    width: 700px;
+}
+
+.informacoes-pet p {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+
+.foto-pet {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.foto-pet label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.foto-pet img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.reservas-pet {
+    width: 700px;
+    margin-top: 20px;
+}
+
+.reservas-pet h3 {
+    margin-bottom: 20px;
+}
+
+.reserva-pet {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #006eff;
+    border-radius: 8px;
+}
+
+.reserva-pet p {
+    margin-bottom: 8px;
+}
+
+.reserva-pet p:last-child {
+    margin-bottom: 0;
+}

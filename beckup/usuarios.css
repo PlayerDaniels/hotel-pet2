@@ -1,0 +1,204 @@
+.conteudo {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+.conteudo h3 {
+    margin-bottom: 20px;
+}
+
+.conteudo-usuario {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* BOTÕES */
+
+.botoes-usuario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.botoes-usuario a {
+    text-decoration: none;
+    color: white;
+    background-color: #006eff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+
+.visualizado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visualizado span {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.visualizado a {
+    text-decoration: none;
+    color: #006eff;
+    background-color: #fff;
+    border: 1px solid #006eff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.dialogo {
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.campos-esquerda {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.campos-esquerda input,
+.campos-esquerda select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.campos-direita {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.campos-direita input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.datas {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes-dialogo {
+    margin-right: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.botoes-dialogo button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pesquisar {
+    color: white;
+    background-color: #006eff;
+    border: 1px solid #006eff;
+}
+
+.limpar {
+    color: #006eff;
+    background-color: white;
+    border: 1px solid #006eff;
+}
+
+
+.cadastrados {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+.barra-cadastrados {
+    display: flex;
+    align-items: center;
+    background-color: #006eff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.barra-cadastrados div {
+    width: 14%;
+}
+
+.espaco-check {
+    width: 5% !important;
+}
+
+
+
+.usuario-cadastrado {
+    display: flex;
+    align-items: center;
+    padding: 15px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.usuario-cadastrado>div {
+    width: 17%;
+}
+
+.usuario-cadastrado .check {
+    width: 5%;
+}
+
+
+
+.check input {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.foto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.status-2 {
+    color: #008000;
+}
+
+.status {
+    color: #800000;
+}
+
+
+
+.acoes {
+    display: flex;
+    gap: 10px;
+    width: auto !important;
+}
+
+.acoes a {
+    text-decoration: none;
+    color: #006eff;
+    padding: 8px 12px;
+    border: 1px solid #006eff;
+    border-radius: 8px;
+}
