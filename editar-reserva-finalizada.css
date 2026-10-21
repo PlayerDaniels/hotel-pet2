@@ -1,0 +1,153 @@
+ .conteudo {
+     padding: 20px;
+     background-color: #f2f2f2;
+     border-radius: 8px;
+     margin-left: 220px;
+     padding: 30px;
+ }
+
+
+ .editar-reserva {
+     width: 100%;
+     margin-top: 20px;
+     padding: 20px;
+     background-color: #fff;
+     border-radius: 8px;
+ }
+
+ .editar-reserva h2 {
+     margin-bottom: 20px;
+     margin-left: 30px;
+ }
+
+ .editar {
+     width: 70%;
+     margin-left: 100px;
+     margin-top: 20px;
+     padding: 20px;
+     background-color: #fff;
+     border-radius: 8px;
+ }
+
+ .editar-reserva input[type="text"],
+ .editar-reserva select,
+ .editar-reserva textarea {
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     font-family: Arial, sans-serif;
+ }
+
+
+ .periodo {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 15px;
+ }
+
+ .periodo input {
+     width: 50%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+ }
+
+
+ .editar-reserva textarea {
+     height: 100px;
+     resize: none;
+ }
+
+
+ .foto-pet {
+     margin-top: 10px;
+     margin-bottom: 20px;
+ }
+
+ .foto-pet label {
+     display: block;
+     margin-bottom: 8px;
+ }
+
+ .foto-pet input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+ }
+
+
+ .recibo {
+     width: 700px;
+     margin-bottom: 20px;
+ }
+
+ .recibo label {
+     display: block;
+     margin-bottom: 8px;
+ }
+
+ .arquivo-recibo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     background-color: #f8f8f8;
+ }
+
+ .arquivo-recibo span {
+     color: #333;
+ }
+
+ .arquivo-recibo a {
+     text-decoration: none;
+     color: #006eff;
+     border: 1px solid #006eff;
+     padding: 8px 12px;
+     border-radius: 8px;
+ }
+
+
+ .total {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+     margin-bottom: 20px;
+     border: 1px solid #006eff;
+     border-radius: 8px;
+ }
+
+ .total strong {
+     color: #006eff;
+     font-size: 18px;
+ }
+
+
+ .botoes-reserva {
+     display: flex;
+     justify-content: flex-end;
+     gap: 10px;
+ }
+
+ .botoes-reserva button {
+     padding: 10px 25px;
+     border-radius: 8px;
+     cursor: pointer;
+ }
+
+ .salvar {
+     color: white;
+     background-color: #006eff;
+     border: 1px solid #006eff;
+ }
+
+ .limpar {
+     color: #006eff;
+     background-color: white;
+     border: 1px solid #006eff;
+ }

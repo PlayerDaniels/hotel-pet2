@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Reserva</title>
+    <link rel="stylesheet" href="painel.css">
+    <link rel="stylesheet" href="editar-reserva.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="principal">
+
+        <!-- MENU DE CIMA -->
+        <div class="menu-cima">
+
+            <div class="usuario">
+                <img src="img/Daniel.jpg" alt="Foto do usuário">
+                <a>Daniel Correia</a>
+            </div>
+
+        </div>
+
+        <!-- MENU LATERAL -->
+        <div class="menu-lateral">
+
+            <div class="logo">
+                <img src="img/logo-hotel-pet.webp" alt="Logo">
+            </div>
+
+            <div class="menu-opcoes">
+
+                <a href="pet.html">Pet</a>
+
+                <a href="usuarios.html">Usuários</a>
+
+                <a href="configuracoes.html">Configurações</a>
+
+                <a href="reservas.html">Reservas</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTEÚDO -->
+        <div class="conteudo">
+
+            <h3>Home / Reserva / Editar-Reserva</h3>
+
+            <div class="editar-reserva">
+                <h2>Editar Reserva</h2>
+
+                <div class="editar">
+
+                    <input type="text" placeholder="Proprietário">
+
+                    <input type="text" placeholder="Pet">
+
+                    <div class="periodo">
+
+                        <input type="date" title="Data de entrada">
+
+                        <input type="date" title="Data de saída">
+
+                    </div>
+
+                    <textarea placeholder="Notas"></textarea>
+
+                    <select>
+                        <option value="">Status</option>
+                        <option value="reservado">Reservado</option>
+                        <option value="andamento">Em andamento</option>
+                        <option value="finalizado">Finalizado</option>
+                        <option value="cancelado">Cancelado</option>
+                    </select>
+
+                    <textarea placeholder="Anotações do funcionário"></textarea>
+
+                    <div class="foto-pet">
+
+                        <label>Foto do Pet</label>
+
+                        <input type="file" accept="image/*">
+
+                    </div>
+
+                    <div class="total">
+
+                        <span>Total das diárias:</span>
+
+                        <strong>R$ 0,00</strong>
+
+                    </div>
+
+                    <div class="botoes-reserva">
+
+                        <button class="salvar">Salvar</button>
+
+                        <button class="limpar">Limpar</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
