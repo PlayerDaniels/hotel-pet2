@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
+    <title>Usuários</title>
     <link rel="stylesheet" href="painel.css">
-    <link rel="stylesheet" href="reservas.css">
+    <link rel="stylesheet" href="usuarios.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="principal">
 
         <div class="menu-cima">
-            <div class="usuario">
+            <div class="usuario" data-destino="editar-perfil.html" style="cursor: pointer;" title="Editar perfil">
                 <img src="img/Daniel.jpg" alt="Foto do usuário">
                 <a>Daniel Correia</a>
             </div>
@@ -34,12 +34,22 @@
 
         <div class="conteudo">
 
-            <h3>Home / Reservas</h3>
+            <h3>Home / Usuários</h3>
 
             <div class="conteudo-usuario">
+
                 <div class="botoes-usuario">
-                    <a href="fazer-reserva.html"> + Nova Reserva</a>
+                    <a href="cadastrar-usuario.html">+ Novo</a>
+                    <a href="#" data-aviso="Função Remover em breve.">Remover</a>
+                    <a href="#" data-aviso="Função Mudar Status em breve.">Mudar Status</a>
                 </div>
+
+                <div class="visualizado">
+                    <span>Visualizado por</span>
+                    <a href="usuarios.html">Usuários</a>
+                    <a href="#" data-aviso="Visualização por Funções em breve.">Funções</a>
+                </div>
+
             </div>
 
             <div class="dialogo">
@@ -47,14 +57,13 @@
                 <div class="campos-esquerda">
                     <input type="text" id="busca-id" placeholder="ID">
 
-                    <input type="text" id="busca-proprietario" placeholder="Proprietário">
+                    <input type="text" id="busca-email" placeholder="E-mail">
 
                     <select id="busca-status">
                         <option value="">Status</option>
-                        <option value="reservada">Reservada</option>
-                        <option value="em andamento">Em andamento</option>
-                        <option value="finalizada">Finalizada</option>
-                        <option value="cancelada">Cancelada</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                        <option value="pendente">Pendente</option>
                     </select>
                 </div>
 
@@ -64,12 +73,14 @@
                         <input type="date" id="busca-fim">
                     </div>
 
-                    <div class="datas">
-                        <input type="text" id="busca-total-min" placeholder="Total mínimo (R$ 0,00)">
-                        <input type="text" id="busca-total-max" placeholder="Total máximo (R$ 0,00)">
-                    </div>
+                    <input type="text" id="busca-nome" placeholder="Nome">
 
-                    <input type="text" id="busca-pet" placeholder="Pet">
+                    <select id="busca-funcao">
+                        <option value="">Função</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="funcionário">Funcionário</option>
+                        <option value="gerente">Gerente</option>
+                    </select>
                 </div>
 
                 <div class="botoes-dialogo">
@@ -83,53 +94,53 @@
 
                 <div class="barra-cadastrados">
                     <div class="espaco-check"></div>
-                    <div>ID</div>
-                    <div>Pet</div>
-                    <div>Chegada</div>
-                    <div>partida</div>
+                    <div>Foto</div>
+                    <div>Email</div>
+                    <div>Nome</div>
+                    <div>Função</div>
                     <div>Status</div>
-                    <div>total</div>
+                    <div>Criado em</div>
                 </div>
 
-                <div class="usuario-cadastrado" data-proprietario="Daniel Correia">
+                <div class="usuario-cadastrado" data-id="1">
                     <div class="check"><input type="checkbox"></div>
-                    <div class="ID">11122233</div>
-                    <div class="pet">Zigg</div>
-                    <div class="nome">22/08/2026</div>
-                    <div class="funcao">28/08/2026</div>
-                    <div class="status-2">Reservada</div>
-                    <div class="criado">232,00</div>
+                    <div class="foto"><img src="img/Daniel.jpg" alt="Foto do usuário"></div>
+                    <div class="email">daniel@email.com</div>
+                    <div class="nome">Daniel Correia</div>
+                    <div class="funcao">Gerente</div>
+                    <div class="status-2">Ativo</div>
+                    <div class="criado">17/08/2026</div>
                     <div class="acoes">
-                        <a href="editar-reserva.html">Editar</a>
-                        <a href="ver-reservas.html">Visualizar</a>
+                        <a href="editar-perfil.html">Editar</a>
+                        <a href="#" data-aviso="Página de visualização em breve.">Visualizar</a>
                     </div>
                 </div>
 
-                <div class="usuario-cadastrado" data-proprietario="José Silva">
+                <div class="usuario-cadastrado" data-id="2">
                     <div class="check"><input type="checkbox"></div>
-                    <div class="ID">11122234</div>
-                    <div class="pet">Russo</div>
-                    <div class="nome">23/08/2026</div>
-                    <div class="funcao">25/08/2026</div>
-                    <div class="status-2">Em andamento</div>
-                    <div class="criado">232,00</div>
+                    <div class="foto"><img src="img/jose.webp" alt="Foto do usuário"></div>
+                    <div class="email">josé@email.com</div>
+                    <div class="nome">José Silva</div>
+                    <div class="funcao">Cliente</div>
+                    <div class="status">Inativo</div>
+                    <div class="criado">12/05/2026</div>
                     <div class="acoes">
-                        <a href="editar-reserva.html">Editar</a>
-                        <a href="ver-reservas.html">Visualizar</a>
+                        <a href="editar-perfil.html">Editar</a>
+                        <a href="#" data-aviso="Página de visualização em breve.">Visualizar</a>
                     </div>
                 </div>
 
-                <div class="usuario-cadastrado" data-proprietario="João Filho de Zebedeu">
+                <div class="usuario-cadastrado" data-id="3">
                     <div class="check"><input type="checkbox"></div>
-                    <div class="ID">11122235</div>
-                    <div class="pet">Luck</div>
-                    <div class="nome">20/08/2026</div>
-                    <div class="funcao">28/08/2026</div>
-                    <div class="status">Finalizada</div>
-                    <div class="criado">232,00</div>
+                    <div class="foto"><img src="img/joao.jpg" alt="Foto do usuário"></div>
+                    <div class="email">João3.16@email.com</div>
+                    <div class="nome">João Filho de Zebedeu</div>
+                    <div class="funcao">Funcionário</div>
+                    <div class="status-2">Ativo</div>
+                    <div class="criado">15/09/2026</div>
                     <div class="acoes">
-                        <a href="editar-reserva-finalizada.html">Editar</a>
-                        <a href="ver-reservas.html">Visualizar</a>
+                        <a href="editar-perfil.html">Editar</a>
+                        <a href="#" data-aviso="Página de visualização em breve.">Visualizar</a>
                     </div>
                 </div>
 
@@ -140,7 +151,7 @@
     </div>
 
     <script src="js/navegacao.js"></script>
-    <script src="js/reservas.js"></script>
+    <script src="js/usuarios.js"></script>
 </body>
 
 </html>

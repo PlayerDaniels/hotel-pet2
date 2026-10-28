@@ -14,7 +14,7 @@
     <div class="principal">
 
         <div class="menu-cima">
-            <div class="usuario">
+            <div class="usuario" data-destino="editar-perfil.html" style="cursor: pointer;" title="Editar perfil">
                 <img src="img/Daniel.jpg" alt="Foto do usuário">
                 <a>Daniel Correia</a>
             </div>
@@ -47,6 +47,12 @@
                 <div class="campos-esquerda">
                     <input type="text" id="busca-id" placeholder="ID">
                     <input type="text" id="busca-nome" placeholder="Nome">
+
+                    <select id="busca-tipo">
+                        <option value="">Tipo</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                    </select>
                 </div>
 
                 <div class="campos-direita">

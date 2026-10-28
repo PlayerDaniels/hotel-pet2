@@ -2,6 +2,7 @@ const linhas = document.querySelectorAll(".cadastrados .usuario-cadastrado");
 
 const campoId = document.getElementById("busca-id");
 const campoNome = document.getElementById("busca-nome");
+const campoTipo = document.getElementById("busca-tipo");
 const campoRaca = document.getElementById("busca-raca");
 const campoTamanho = document.getElementById("busca-tamanho");
 
@@ -16,11 +17,15 @@ function contem(valor, busca) {
 
 function pesquisar() {
     linhas.forEach(function (linha) {
-        const combina =
+        let combina =
             contem(coluna(linha, 1), campoId.value) &&
             contem(coluna(linha, 2), campoNome.value) &&
             contem(coluna(linha, 4), campoRaca.value) &&
             contem(coluna(linha, 5), campoTamanho.value);
+
+        if (campoTipo.value !== "") {
+            combina = combina && coluna(linha, 3) === campoTipo.value;
+        }
 
         linha.style.display = combina ? "" : "none";
     });
@@ -29,6 +34,7 @@ function pesquisar() {
 function limpar() {
     campoId.value = "";
     campoNome.value = "";
+    campoTipo.value = "";
     campoRaca.value = "";
     campoTamanho.value = "";
     pesquisar();
